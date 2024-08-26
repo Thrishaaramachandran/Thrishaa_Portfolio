@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrishaa's Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/my-avatar1.jpg"type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar1.jpg" alt="Thrishaa R" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Thrishaa R">Thrishaa R</h1>
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/thrishaaramachandran/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Thrishaaramachandran" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.hackerrank.com/profile/thrishaaramacha1" class="social-link" target="_blank">
+             <img src="./assets/images/logo-hack.png" alt="HackerRank" style="width: 26px; height: 26px;">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.kaggle.com/thrishaaramachandran" class="social-link" target="_blank">
+              <img src="./assets/images/logo-kag.png" alt="Kaggle" style="width: 20px; height: 16px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:thrishaaramachandran@gmail.com" class="contact-link">thrishaaramachandran@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2003-09-02">Sep 2, 2003</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Tamil Nadu,India</address>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>I'm currently pursuing a path to become a data analyst. To achieve a goal, I'm focusing on learning Python and its associated libraries, along with Power BI, which are essential tools in data analysis. This knowledge will equip myself to analyze data, create visualizations, and generate insights.
+            I enjoy turning complex problems into simple, beautiful and Visuals.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">SKILLS SUMMARY</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Python icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python</h4>
+
+                <p class="service-item-text">
+                  Libraries : Pandas,Numpy,Tkinter,Scikit Learn,Matplotlib,Seaborn,OpenCV,Pillow.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="SQL icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SQL</h4>
+
+                <p class="service-item-text">
+                  MySQL,MariaDB.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="web technology icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Technology</h4>
+                <p class="service-item-text">
+                  HTML,CSS,JS,PHP.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technologies</h4>
+
+                <p class="service-item-text">
+                  Machine Learning,Artifical Intelligence,Git.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <!--<div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="thrishaa avatar" width="80" data-modal-img>
+              </figure>
+            </div>
+          </section>
+          -->
+
+        </div>
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Tools</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+                <img src="./assets/images/Tool1.png" alt="Client logo" width="40">
+                
+              </a>
+            </li>
+
+            <li class="clients-item">
+
+                <img src="./assets/images/Tool2.png" alt="client logo">
+              </a>
+            </li>
+
+             <li class="clients-item">
+                <img src="./assets/images/Tool3.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+
+                <img src="./assets/images/Tool4.jpg" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">EDUCATION</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+          <!--  <h3 class="h3">Education</h3>     -->
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vivekanandha College of Arts and Science for Women(Autonomous)</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+             Master of Computer Application , Grade : 8.25
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vivekanandha College of Arts and Science for Women(Autonomous)</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+              Bachelor of Information Technology , Grade : 8.15
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Model School</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+               Higher Secondary , Percentage : 65%
+              </p>
+
+            </li>
+ <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Model School</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+               SSLC , Percentage : 81.4%
+              </p>
+
+            </li>
+
+          </ol>
+          </ol>
+
+        </section>
+
+      </article>
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desktop Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desktop Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Thrishaaramachandran/Faculty_Evaluation_System.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/web_pro1.jpg" alt="Faculty Evaluation System" loading="lazy" width="750" height="1500">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-12-23">Dec 23, 2022</time>
+                  </div>
+
+                  <h3 class="h4 blog-item-title">Faculty Evaluation System</h3>
+                  <p class="project-category">HTML,CSS,PHP,MySQL</p>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+             
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/web_pro2.jpg" alt="portfolio" loading="lazy" width="600" height="200">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-08-27">Aug 27, 2024</time>
+                  </div>
+
+                  <h3 class="h4 blog-item-title">My Personal Portfolio</h3>
+                  <p class="project-category">HTML,CSS,JS</p>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+         
+              </a>
+            </li>
+
+          
+            <li class="project-item  active" data-filter-item data-category="desktop applications">
+              <a href="https://github.com/Thrishaaramachandran/Simple-Calculator.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/des_pro1.jpg" alt="Calculator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GUI Calculator</h3>
+
+                <p class="project-category">Python(Tkinter)</p>
+
+              </a>
+            </li>
+          
+          </ul>
+
+        </section>
+
+      </article>
+      <!--
+        - #BLOG
+      -->
+      
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Certifications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Course Certificate</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Academic Certificate</button>
+            </li>
+ 
+            <li class="filter-item">
+              <button data-filter-btn>Co-Curriculum Certificate</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Course Certificate</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Academic Certificate</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Co Curriculum Certificate</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="course certificate">
+              <a href="https://drive.google.com/file/d/1AJSprwnaHdBYPXCDMZoI9NDyAOm5bAPb/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/c_cer1.jpg" alt="Data Analytics with Python" loading="lazy" width="750" height="1500">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">NPTEL Swayam</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-04-23">Apr, 2023</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Data Analytics with Python</h3>
+                  <p class="project-category">Score 65 %</p>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+             
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="academic certificate">
+              <a href="https://drive.google.com/file/d/1B66WVtWQSJ2lIlA38JL7s4_3FXcZFCd8/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/a_cer1.jpg" alt="conferences" loading="lazy" width="600" height="200">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Vivekanandha</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Metaverse Technologies and Cloud Computing</h3>
+                    <p class="project-category">International Conference</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+              </a>
+            </li>
+
+            
+
+            <li class="project-item  active" data-filter-item data-category="co-curriculum certificate">
+              <a href="https://drive.google.com/file/d/1BMeHdmT12Y546jRIhJG--qa5asMhNHmk/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/co_cer2.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Sri VBS Wind Technologies</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Data Analyst</h3>
+                    <p class="project-category">Internship</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="co-curriculum certificate">
+              <a href="https://drive.google.com/file/d/1AQXa28r4K7rgmFcQmyjakYe_iHO8ZHPl/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/co_cer3.jpg" alt="industrial visit" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">UMAGINE</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-23">Feb, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">TN Global Conference</h3>
+                    <p class="project-category">Industrial Visit</p>
+                    <p class="blog-text">
+                      
+                    </p>
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="course certificate">
+              <a href="https://drive.google.com/file/d/1AbD0uRGT8nzyNT2B0HzxN8ig14i_BdJT/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/c_cer2.jpg" alt="workshop" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Training Trains</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-29">Dec, 2023</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Data Science With Python</h3>
+                    <p class="project-category">Workshop</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+              </a>
+            </li>
+          
+            <li class="project-item  active" data-filter-item data-category="course certificate">
+              <a href="https://drive.google.com/file/d/1ApaN__IB1wXPKjBItY_tN_8aaRkp9_WG/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/c_cer3.jpg" alt="ai skill challenge " loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Microsoft</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-08-23">Aug, 2023</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Microsoft Learn AI Skill Challenge</h3>
+                    <p class="project-category">AI Skill Challenge</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="academic certificate">
+              <a href="https://drive.google.com/file/d/1BWrVmekqr_LbA7L52T9yzrt3xdWeWq1f/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/a_cer3.jpg" alt="attendance" loading="lazy">
+                </figure>
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Vivekanandha</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-23">Mar, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">100 % Attendance </h3>
+                    <p class="project-category">Academic Year 2023-2024</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="academic certificate">
+              <a href="https://drive.google.com/file/d/1B66WVtWQSJ2lIlA38JL7s4_3FXcZFCd8/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/a_cer2.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Vivekanandha</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Metaverse Technologies and Cloud Computing</h3>
+                    <p class="project-category">International Conference</p>
+                    <p class="blog-text">
+                      
+                    </p>
+                  
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="co-curriculum certificate">
+              <a href="https://drive.google.com/file/d/1BM5vJXkFYipz9_73CpYXoRce2egKsPCp/view?usp=drive_link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/co_cer1.jpg" alt="orizon" loading="lazy" width="600" height="200">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">UNISO</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar, 2024</time>
+                  </div>
+
+                  <h5 class="h4 blog-item-title">Application of JAVA in Database Management System Development  </h5>
+                    <p class="project-category">Internship</p>
+                    <p class="blog-text">
+                      
+                    </p>
+              </a>
+            </li>
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-form">
+         
+
+
+
+
+          <!--<h3 class="h3 testimonials-title">Alternative Email </h3>-->
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Feel free to connect with me on LinkedIn and check out my open-source projects on Github and my data analysis work on Kaggle.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          
+            <li><a href="" class="resume-btn" target="_blank">
+              <button class="form-btn" type="button">
+                <ion-icon name="document"></ion-icon>
+                <span>View Resume</span>
+              </button>
+            </a>
+            </li>
+        
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> origin/main
