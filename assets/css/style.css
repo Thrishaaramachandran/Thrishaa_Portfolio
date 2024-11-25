@@ -938,37 +938,34 @@ position: absolute;
 }
 
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 20px; /* Space between items */
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .project-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item.active {
-  display: block;
-  animation: scaleUp 0.25s ease forwards;
 }
 
 .project-item:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-img {
   width: 100%;
-  height: 200px; /* Fixed height for consistent alignment */
+  height: 200px; /* Fixed height for uniformity */
   overflow: hidden;
   position: relative;
 }
@@ -976,7 +973,7 @@ position: absolute;
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops images to fit the container */
+  object-fit: cover; /* Ensure images fit within container */
   transition: transform 0.3s ease;
 }
 
@@ -984,59 +981,30 @@ position: absolute;
   transform: scale(1.1); /* Zoom effect on hover */
 }
 
-.project-item-icon-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  background: var(--jet);
-  color: var(--orange-yellow-crayola);
-  font-size: 20px;
-  padding: 18px;
-  border-radius: 12px;
-  opacity: 0;
-  z-index: 2;
-  transition: 0.3s ease;
-}
-
-.project-item > a:hover .project-item-icon-box {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
 .blog-content {
   padding: 15px;
-  text-align: left;
+  text-align: center; /* Align text */
 }
 
 .h4.blog-item-title {
   font-size: 18px;
   margin: 10px 0;
   font-weight: bold;
+  color: #333;
 }
 
 .project-category {
   color: #777;
   font-size: 14px;
   margin-top: 5px;
+  font-weight: bold;
 }
 
-@keyframes scaleUp {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .project-list {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr; /* Single column for smaller screens */
   }
 }
-
 
 /*-----------------------------------*\
   #BLOG
