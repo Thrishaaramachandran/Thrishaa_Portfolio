@@ -1024,9 +1024,12 @@ position: absolute;
 }
 
 .project-item > a:hover img { transform: scale(1.1); }
-
-.project-title,
 .project-category { margin-left: 10px; }
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
 
 .project-title {
   color: var(--white-2);
